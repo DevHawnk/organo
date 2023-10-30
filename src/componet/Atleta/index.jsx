@@ -1,6 +1,6 @@
 import "./Atleta.css";
 
-const Atleta = (props) => {
+const Atleta = ({ nome, imagem, cargo }) => {
   return (
     <div className="atleta ">
       <div className="cabecalho">
@@ -8,8 +8,8 @@ const Atleta = (props) => {
       </div>
 
       <div className="rodape">
-        <h4>{props.nome}</h4>
-        <h5>{props.cargo}</h5>
+        <h4>{nome}</h4>
+        <h5>{cargo}</h5>
       </div>
     </div>
   );
