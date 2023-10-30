@@ -4,7 +4,7 @@ const Atleta = (props) => {
   return (
     <div className="atleta ">
       <div className="cabecalho">
-        <img src="https://github.com/devhawnk.png" alt="hawnk dev" />
+        <img src={props.imagem} alt={props.nome} />
       </div>
 
       <div className="rodape">
