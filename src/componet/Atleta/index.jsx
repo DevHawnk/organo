@@ -1,10 +1,10 @@
 import "./Atleta.css";
 
-const Atleta = ({ nome, imagem, cargo }) => {
+const Atleta = ({ nome, imagem, cargo, corDeFundo }) => {
   return (
-    <div className="atleta ">
-      <div className="cabecalho">
-        <img src={props.imagem} alt={props.nome} />
+    <div className="atleta">
+      <div className="cabecalho" style={{ backgroundColor: corDeFundo }}>
+        <img src={imagem} alt={nome} />
       </div>
 
       <div className="rodape">

@@ -7,23 +7,23 @@ function App() {
   const times = [
     {
       nome: "Ataque",
-      corPrimaria: "#ffff",
-      corSecundaria: "#FFFF00",
+      corPrimaria: "#FFFF00",
+      corSecundaria: "#ffff",
     },
     {
       nome: "Defesa",
       corPrimaria: "#33006F",
-      corSecundaria: "#FFC72C",
+      corSecundaria: "#1a0433",
     },
     {
       nome: "Couch s",
       corPrimaria: "#4B0082",
-      corSecundaria: "#E6E6FA",
+      corSecundaria: "#830fd6",
     },
     {
       nome: "Comessão Tecnica",
-      corPrimaria: "#0066b2",
-      corSecundaria: "#33006F",
+      corPrimaria: "#deebf5",
+      corSecundaria: "#d8cbd8",
     },
     {
       nome: "Saude",
@@ -33,18 +33,18 @@ function App() {
     {
       nome: "Marketing",
       corPrimaria: "#F0E68C",
-      corSecundaria: "#ffff",
+      corSecundaria: "#f3e248",
     },
     {
       nome: "Inovação",
       corPrimaria: "#FEBE10",
-      corSecundaria: "#1d1160",
+      corSecundaria: "#f5ca55",
     },
   ];
   const [atleta, setAtleta] = useState([]);
 
   const aoNovoAtletaAdicionado = (atleta) => {
-    console.log(atleta);
+    debugger;
     setAtleta([...atleta, atleta]);
   };
 
@@ -55,13 +55,14 @@ function App() {
         times={times.map((time) => time.nome)}
         aoAtletaCadastrado={(atleta) => aoNovoAtletaAdicionado(atleta)}
       />
+
       {times.map((time) => (
         <Time
           key={time.nome}
           nome={time.nome}
           corPrimaria={time.corPrimaria}
           corSecundaria={time.corSecundaria}
-          atletar={atleta.filter((atleta) => atleta.time === time.nome)}
+          atleta={atleta.filter((atleta) => atleta.time === time.nome)}
         />
       ))}
     </div>
