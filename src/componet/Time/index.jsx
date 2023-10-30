@@ -7,6 +7,7 @@ const Time = (props) => {
   return props.atleta.length > 0 ? (
     <section className="time" style={css}>
       <h3 style={{ borderColor: props.corPrimaria }}>{props.nome}</h3>
+    {props.atleta.map( atleta => <Atleta nome={atleta.nome} cargo={atleta.cargo}/>)}</h3>
 
       <div className="colaboradores">
         {props.atleta.map((atleta) => (
