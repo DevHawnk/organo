@@ -4,7 +4,7 @@ import "./Time.css";
 const Time = (props) => {
   const css = { backgroundColor: props.corSecundaria };
 
-  return props.atleta.length > 0 ? (
+  return props.atleta > 0 ? (
     <section className="time" style={css}>
       <h3 style={{ borderColor: props.corPrimaria }}>{props.nome}</h3>
 
