@@ -9,19 +9,22 @@ const Formulario = (props) => {
   const [cargo, setCargo] = useState("");
   const [imagem, setImagem] = useState("");
   const [time, setTime] = useState("");
+  const [descricao, setDescricao] = useState("");
 
   const aoSalvar = (evento) => {
     evento.preventDefault();
-    props.aoColaboradorCadastrado({
+    props.aoAtletaCadastrado({
       nome,
       cargo,
       imagem,
       time,
+      descricao,
     });
     setNome("");
     setCargo("");
     setImagem("");
     setTime("");
+    setDescricao("");
   };
 
   return (
@@ -47,6 +50,13 @@ const Formulario = (props) => {
           placeholder="Digite o endereço da imagem"
           valor={imagem}
           aoAlterado={(valor) => setImagem(valor)}
+        />
+        <CampoTexto
+          obrigatorio={true}
+          label="Descrição"
+          placeholder="Descreva-se em poucas palavras"
+          valor={descricao}
+          aoAlterado={(valor) => setDescricao(valor)}
         />
         <ListaSuspensa
           obrigatorio={true}

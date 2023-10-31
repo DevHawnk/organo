@@ -1,15 +1,16 @@
 import "./Atleta.css";
 
-const Atleta = (props) => {
+const Atleta = ({ nome, imagem, cargo, descricao, corDeFundo }) => {
   return (
-    <div className="atleta ">
-      <div className="cabecalho">
-        <img src="https://github.com/devhawnk.png" alt="hawnk dev" />
+    <div className="atleta">
+      <div className="cabecalho" style={{ backgroundColor: corDeFundo }}>
+        <img src={imagem} alt={nome} />
       </div>
 
       <div className="rodape">
-        <h4>{props.nome}</h4>
-        <h5>{props.cargo}</h5>
+        <h4>{nome}</h4>
+        <h5>{cargo}</h5>
+        <div>{descricao}</div>
       </div>
     </div>
   );

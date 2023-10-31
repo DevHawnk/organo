@@ -7,18 +7,25 @@
   border-radius: 10px 10px 0px 0px;
 }
 .atleta img {
-  width: 140px;
+  display: flex;
+  width: 110px;
+
   border-radius: 50%;
   position: relative;
-  bottom: -50px;
+  bottom: -40px 25px;
 }
-
 .atleta .rodape {
-  background: #020202;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
   border-radius: 0px 0px 10px 10px;
-  padding-top: 90px;
-  padding-bottom: 40px;
+  padding: 90px 0 40px;
+}
+
+.atleta .rodape h4,
+.atleta .rodape h5 {
+  margin: 0;
 }
 
 .atleta .rodape h4 {
@@ -26,12 +33,11 @@
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-right: 8px;
 }
 
 .atleta .rodape h5 {
   font-size: 18px;
   line-height: 22px;
   color: #f0e68c;
-  padding: 0 16px;
 }
