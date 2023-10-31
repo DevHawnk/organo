@@ -41,11 +41,11 @@ function App() {
       corSecundaria: "#f5ca55",
     },
   ];
-  const [atleta, setAtleta] = useState([]);
+  const [atletas, setAtletas] = useState([]);
 
   const aoNovoAtletaAdicionado = (atleta) => {
-    debugger;
-    setAtleta([...atleta, atleta]);
+    console.log(atleta);
+    setAtletas([...atletas, atletas]);
   };
 
   return (
@@ -62,7 +62,7 @@ function App() {
           nome={time.nome}
           corPrimaria={time.corPrimaria}
           corSecundaria={time.corSecundaria}
-          atleta={atleta.filter((atleta) => atleta.time === time.nome)}
+          atletas={atletas.filter((atleta) => atleta.time === time.nome)}
         />
       ))}
     </div>

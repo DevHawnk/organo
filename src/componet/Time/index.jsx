@@ -4,12 +4,12 @@ import "./Time.css";
 const Time = (props) => {
   const css = { backgroundColor: props.corSecundaria };
 
-  return props.atleta > 0 ? (
+  return props.atletas > 0 ? (
     <section className="time" style={css}>
       <h3 style={{ borderColor: props.corPrimaria }}>{props.nome}</h3>
 
       <div className="atleta">
-        {props.atleta.map((atleta) => (
+        {props.atletas.map((atleta) => (
           <Atleta
             corDeFundo={props.corPrimaria}
             key={atleta.nome}
