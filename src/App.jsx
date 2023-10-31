@@ -44,8 +44,7 @@ function App() {
   const [atletas, setAtletas] = useState([]);
 
   const aoNovoAtletaAdicionado = (atleta) => {
-    console.log(atleta);
-    setAtletas([...atletas, atletas]);
+    setAtletas([...atletas, atleta]);
   };
 
   return (
