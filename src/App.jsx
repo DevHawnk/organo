@@ -44,199 +44,49 @@ function App() {
     },
   ]);
 
-  // const inicial = [
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Lucas Louzeira",
-  //     cargo: "Atleta OL e couch's",
-  //     imagem:
-  //       "https://drive.google.com/file/d/1l4qIwlKOQfFPSb1WZekDko5IZOuK-zBi/view?usp=drive_link",
-  //     time: times[0].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Matheus Dregg",
-  //     cargo: "Atleta, capitão da defesa e MLB",
-  //     imagem:
-  //       "https://drive.google.com/file/d/1IH-hTmuFDM6w9ZqrR9hNS9C7494Rp0d-/view?usp=drive_link",
-  //     time: times[0].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Felipe Silva e Silva",
-  //     cargo: "Atleta DB",
-  //     imagem:
-  //       "	https://drive.google.com/file/d/1KaO64C8SJYNr8Zk4mACwUgKE-50G_IwZ/view?usp=drive_link",
-  //     time: times[0].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Arthur",
-  //     cargo: "Heard Couht",
-  //     imagem:
-  //       "https://drive.google.com/file/d/1cUkM9rv-FjevMGVdVB6RKxSiYDN18bT2/view?usp=drive_link",
-  //     time: times[0].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Hawnk",
-  //     cargo: "O que o time precisar",
-  //     imagem:
-  //       "https://drive.google.com/file/d/1mM_sn5zeDae9VOPdcChPX-IBGVwibNBV/view?usp=drive_link",
-  //     time: times[1].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Bogão",
-  //     cargo: "QB e financeiro do time",
-  //     imagem:
-  //       "https://scontent.fcaw3-1.fna.fbcdn.net/v/t39.30808-6/370375313_931894421980193_5683235921473774694_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=X5zpncvmvREAX9EBYpn&_nc_ht=scontent.fcaw3-1.fna&oh=00_AfB1HyreXg1owvaB9vB0Q8BZbKu92XFzg8u4Cq0cNVHQCA&oe=6546137B",
-  //     time: times[1].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Arthur",
-  //     cargo: "Heard Couht",
-  //     imagem:
-  //       "https://drive.google.com/file/d/1cUkM9rv-FjevMGVdVB6RKxSiYDN18bT2/view?usp=drive_link",
-  //     time: times[1].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Matheus Dregg",
-  //     cargo: "Atleta, capitão da defesa e MLB",
-  //     imagem:
-  //       "https://drive.google.com/file/d/1IH-hTmuFDM6w9ZqrR9hNS9C7494Rp0d-/view?usp=drive_link",
-  //     time: times[1].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Bogão",
-  //     cargo: "QB e financeiro do time",
-  //     imagem:
-  //       "https://scontent.fcaw3-1.fna.fbcdn.net/v/t39.30808-6/370375313_931894421980193_5683235921473774694_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=X5zpncvmvREAX9EBYpn&_nc_ht=scontent.fcaw3-1.fna&oh=00_AfB1HyreXg1owvaB9vB0Q8BZbKu92XFzg8u4Cq0cNVHQCA&oe=6546137B",
-  //     time: times[2].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Lucas Louzeira",
-  //     cargo: "Atleta OL e couch's",
-  //     imagem:
-  //       "https://drive.google.com/file/d/1l4qIwlKOQfFPSb1WZekDko5IZOuK-zBi/view?usp=drive_link",
-  //     time: times[2].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Felipe Silva e Silva",
-  //     cargo: "Atleta DB",
-  //     imagem:
-  //       "	https://drive.google.com/file/d/1KaO64C8SJYNr8Zk4mACwUgKE-50G_IwZ/view?usp=drive_link",
-  //     time: times[2].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Hawnk",
-  //     cargo: "O que o time precisar",
-  //     imagem:
-  //       "https://drive.google.com/file/d/1mM_sn5zeDae9VOPdcChPX-IBGVwibNBV/view?usp=drive_link",
-  //     time: times[2].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Arthur",
-  //     cargo: "Heard Coach",
-  //     imagem:
-  //       "https://drive.google.com/file/d/1cUkM9rv-FjevMGVdVB6RKxSiYDN18bT2/view?usp=drive_link",
-  //     time: times[3].nome,
-  //   },
-  //   {
-  //     nome: "Lucas Louzeira",
-  //     cargo: "Atleta OL e Coach",
-  //     imagem:
-  //       "https://drive.google.com/file/d/1l4qIwlKOQfFPSb1WZekDko5IZOuK-zBi/view?usp=drive_link",
-  //     time: times[3].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Bogão",
-  //     cargo: "QB e financeiro do time",
-  //     imagem:
-  //       "https://scontent.fcaw3-1.fna.fbcdn.net/v/t39.30808-6/370375313_931894421980193_5683235921473774694_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=X5zpncvmvREAX9EBYpn&_nc_ht=scontent.fcaw3-1.fna&oh=00_AfB1HyreXg1owvaB9vB0Q8BZbKu92XFzg8u4Cq0cNVHQCA&oe=6546137B",
-  //     time: times[3].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Bogão",
-  //     cargo: "QB e financeiro do time",
-  //     imagem:
-  //       "https://scontent.fcaw3-1.fna.fbcdn.net/v/t39.30808-6/370375313_931894421980193_5683235921473774694_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=X5zpncvmvREAX9EBYpn&_nc_ht=scontent.fcaw3-1.fna&oh=00_AfB1HyreXg1owvaB9vB0Q8BZbKu92XFzg8u4Cq0cNVHQCA&oe=6546137B",
-  //     time: times[3].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Bogão",
-  //     cargo: "QB e financeiro do time",
-  //     imagem:
-  //       "https://scontent.fcaw3-1.fna.fbcdn.net/v/t39.30808-6/370375313_931894421980193_5683235921473774694_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=X5zpncvmvREAX9EBYpn&_nc_ht=scontent.fcaw3-1.fna&oh=00_AfB1HyreXg1owvaB9vB0Q8BZbKu92XFzg8u4Cq0cNVHQCA&oe=6546137B",
-  //     time: times[4].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Bogão",
-  //     cargo: "QB e financeiro do time",
-  //     imagem:
-  //       "https://scontent.fcaw3-1.fna.fbcdn.net/v/t39.30808-6/370375313_931894421980193_5683235921473774694_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=X5zpncvmvREAX9EBYpn&_nc_ht=scontent.fcaw3-1.fna&oh=00_AfB1HyreXg1owvaB9vB0Q8BZbKu92XFzg8u4Cq0cNVHQCA&oe=6546137B",
-  //     time: times[4].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Bogão",
-  //     cargo: "QB e financeiro do time",
-  //     imagem:
-  //       "https://scontent.fcaw3-1.fna.fbcdn.net/v/t39.30808-6/370375313_931894421980193_5683235921473774694_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=X5zpncvmvREAX9EBYpn&_nc_ht=scontent.fcaw3-1.fna&oh=00_AfB1HyreXg1owvaB9vB0Q8BZbKu92XFzg8u4Cq0cNVHQCA&oe=6546137B",
-  //     time: times[4].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Bogão",
-  //     cargo: "QB e financeiro do time",
-  //     imagem:
-  //       "https://scontent.fcaw3-1.fna.fbcdn.net/v/t39.30808-6/370375313_931894421980193_5683235921473774694_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=X5zpncvmvREAX9EBYpn&_nc_ht=scontent.fcaw3-1.fna&oh=00_AfB1HyreXg1owvaB9vB0Q8BZbKu92XFzg8u4Cq0cNVHQCA&oe=6546137B",
-  //     time: times[4].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Bogão",
-  //     cargo: "QB e financeiro do time",
-  //     imagem:
-  //       "https://scontent.fcaw3-1.fna.fbcdn.net/v/t39.30808-6/370375313_931894421980193_5683235921473774694_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=X5zpncvmvREAX9EBYpn&_nc_ht=scontent.fcaw3-1.fna&oh=00_AfB1HyreXg1owvaB9vB0Q8BZbKu92XFzg8u4Cq0cNVHQCA&oe=6546137B",
-  //     time: times[5].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Bogão",
-  //     cargo: "QB e financeiro do time",
-  //     imagem:
-  //       "https://scontent.fcaw3-1.fna.fbcdn.net/v/t39.30808-6/370375313_931894421980193_5683235921473774694_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=X5zpncvmvREAX9EBYpn&_nc_ht=scontent.fcaw3-1.fna&oh=00_AfB1HyreXg1owvaB9vB0Q8BZbKu92XFzg8u4Cq0cNVHQCA&oe=6546137B",
-  //     time: times[5].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Bogão",
-  //     cargo: "QB e financeiro do time",
-  //     imagem:
-  //       "https://scontent.fcaw3-1.fna.fbcdn.net/v/t39.30808-6/370375313_931894421980193_5683235921473774694_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=X5zpncvmvREAX9EBYpn&_nc_ht=scontent.fcaw3-1.fna&oh=00_AfB1HyreXg1owvaB9vB0Q8BZbKu92XFzg8u4Cq0cNVHQCA&oe=6546137B",
-  //     time: times[5].nome,
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     nome: "Bogão",
-  //     cargo: "QB e financeiro do time",
-  //     imagem:
-  //       "https://scontent.fcaw3-1.fna.fbcdn.net/v/t39.30808-6/370375313_931894421980193_5683235921473774694_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=X5zpncvmvREAX9EBYpn&_nc_ht=scontent.fcaw3-1.fna&oh=00_AfB1HyreXg1owvaB9vB0Q8BZbKu92XFzg8u4Cq0cNVHQCA&oe=6546137B",
-  //     time: times[5].nome,
-  //   },
-  // ];
+  const inicial = [
+    {
+      id: uuidv4(),
+      nome: "Bogão",
+      cargo: "QuartBack",
+      imagem:
+        "https://scontent.fcaw3-1.fna.fbcdn.net/v/t39.30808-6/370375313_931894421980193_5683235921473774694_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=X5zpncvmvREAX9EBYpn&_nc_ht=scontent.fcaw3-1.fna&oh=00_AfB1HyreXg1owvaB9vB0Q8BZbKu92XFzg8u4Cq0cNVHQCA&oe=6546137B",
+      time: times[0].nome,
+    },
+
+    {
+      id: uuidv4(),
+      nome: "Dregg",
+      cargo: "Capitão da defesa, Middle LineBack",
+      imagem:
+        "https://scontent.fcaw3-1.fna.fbcdn.net/v/t39.30808-6/380771019_944720677364234_6247344273165133156_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=sg14pPjUhxQAX8ItcIo&_nc_ht=scontent.fcaw3-1.fna&oh=00_AfBqNtxPHuWu4d_hI0SpL3lDHSy7n2Zix1v85KHY79iq_g&oe=65477618",
+      time: times[1].nome,
+    },
+    {
+      id: uuidv4(),
+      nome: "Arthur ",
+      cargo: "Head Coach",
+      imagem:
+        "https://github.com/DevHawnk/CardClandestinoTime/blob/master/assent/img/atletas/_Arthur.png?raw=true",
+      time: times[2].nome,
+    },
+    {
+      id: uuidv4(),
+      nome: "Sylvio",
+      cargo: "Atleta e Psicologo",
+      imagem:
+        "https://github.com/DevHawnk/CardClandestinoTime/blob/master/assent/img/atletas/Sylvio.jpg?raw=true",
+      time: times[3].nome,
+    },
+    {
+      id: uuidv4(),
+      nome: "Bogão",
+      cargo: "QB e financeiro do time",
+      imagem:
+        "https://scontent.fcaw3-1.fna.fbcdn.net/v/t39.30808-6/370375313_931894421980193_5683235921473774694_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=X5zpncvmvREAX9EBYpn&_nc_ht=scontent.fcaw3-1.fna&oh=00_AfB1HyreXg1owvaB9vB0Q8BZbKu92XFzg8u4Cq0cNVHQCA&oe=6546137B",
+      time: times[5].nome,
+    },
+  ];
 
   const [atletas, setAtletas] = useState(inicial);
 
