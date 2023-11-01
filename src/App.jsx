@@ -67,7 +67,7 @@ function App() {
       nome: "Arthur ",
       cargo: "Head Coach",
       imagem:
-        "https://github.com/DevHawnk/CardClandestinoTime/blob/master/assent/img/atletas/_Arthur.png?raw=true",
+        "https://github.com/DevHawnk/CardClandestinoTime/blob/master/assent/img/_Arthur.png?raw=true",
       time: times[2].nome,
     },
     {
