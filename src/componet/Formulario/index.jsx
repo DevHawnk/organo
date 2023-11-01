@@ -51,13 +51,7 @@ const Formulario = (props) => {
           valor={imagem}
           aoAlterado={(valor) => setImagem(valor)}
         />
-        <CampoTexto
-          obrigatorio={true}
-          label="Descrição"
-          placeholder="Descreva-se em poucas palavras"
-          valor={descricao}
-          aoAlterado={(valor) => setDescricao(valor)}
-        />
+
         <ListaSuspensa
           obrigatorio={true}
           label="Time"

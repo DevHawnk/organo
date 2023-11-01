@@ -60,7 +60,6 @@ function App() {
         <Time
           key={time.nome}
           nome={time.nome}
-          descricao={time.descricao}
           corPrimaria={time.corPrimaria}
           corSecundaria={time.corSecundaria}
           atletas={atletas.filter((atleta) => atleta.time === time.nome)}
