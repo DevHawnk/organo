@@ -19,7 +19,7 @@ function App() {
     },
     {
       id: uuidv4(),
-      nome: "Couht's",
+      nome: "Coach",
       cor: "#ffffff",
     },
     {
@@ -118,7 +118,7 @@ function App() {
         aoCadastrar={(atleta) => setAtletas([...atletas, atleta])}
       />
       <section className="times">
-        <h1>Gerador de Card</h1>
+        <h1>Card's</h1>
         {times.map((time, indice) => (
           <Time
             mudarCor={mudarCor}
