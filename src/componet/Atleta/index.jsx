@@ -1,14 +1,21 @@
 import "./Atleta.css";
+import { AiFillCloseCircle, AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 
-const Atleta = ({ nome, imagem, cargo, descricao, corDeFundo }) => {
+const Atleta = ({ atleta, corDeFundo, aoDeletar, aoFavoritar }) => {
+  function favoritar() {
+    aoFavoritar(atleta.id);
+  }
   return (
     <div className="atleta">
-      <div style={{ backgroundColor: corDeFundo }}>
-        <h4>{nome}</h4>
-        <img src={imagem} alt={nome} />
-        <h5>{cargo}</h5>
-        <p>{descricao}</p>
-      </div>
+      <AiFillCloseCircle
+        size={25}
+        className="deletar"
+        onClick={() => aoDeletar(atleta.id)}
+      />
+      <img src={atleta.imagem} alt={atleta.nome} />
+      <h4>{atleta.nome}</h4>
+      <h5>{atleta.cargo}</h5>
+      <p>{atleta.descrição}</p>
     </div>
   );
 };
