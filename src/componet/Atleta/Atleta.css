@@ -1,5 +1,5 @@
 .atleta {
-  width: 250px;
+  width: 220px;
 }
 
 .atleta .cabecalho {
@@ -8,7 +8,7 @@
 }
 .atleta img {
   width: 100px;
-  border-radius: 50%;
+  border-radius: 100%;
   position: relative;
   bottom: -50px;
 }
@@ -35,8 +35,11 @@
   padding: 0 16px;
 }
 .atleta .rodape p {
-  font-size: 18px;
-  line-height: 22px;
+  background: #5a5959;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 3px;
+  margin: 3px;
+  font-size: 16px;
   color: #ffffff;
-  padding: 0 16px;
 }
