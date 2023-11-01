@@ -15,7 +15,8 @@
 .container_form form {
   font-family: "Roboto Mono", sans-serif;
   max-width: 80%;
-  background-color: #7d7c7c;
+  background: rgb(25,2,48);
+  background: linear-gradient(179deg, rgba(25,2,48,1) 0%, rgba(80,51,95,1) 100%);
   border-radius: 20px;
   padding: 36px 64px;
   box-shadow: 8px 8px 16px rgb(15, 15, 15);

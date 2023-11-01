@@ -1,22 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&family=Teko:wght@400;700&display=swap");
 
-.time {
+.time .card {
   font-family: "teko", sans-serif;
   text-align: center;
   padding: 32px;
-}
-
-.time {
-  text-align: center;
-  padding: 32px;
-
-  font-family: "teko", sans-serif;
   font-weight: 400;
 }
 
 .time h3 {
   font-size: 32px;
-  border-bottom: 2px solid;
+  font-family: "teko", sans-serif;
+  border-bottom: 4px solid;
   display: inline-block;
   padding-bottom: 8px;
+}
+
+.time .atletas {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 32px;
+  flex-wrap: wrap;
 }

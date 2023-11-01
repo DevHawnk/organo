@@ -7,37 +7,36 @@
   border-radius: 10px 10px 0px 0px;
 }
 .atleta img {
-  display: flex;
-  width: 110px;
-
+  width: 100px;
   border-radius: 50%;
   position: relative;
-  bottom: -40px 25px;
+  bottom: -50px;
 }
 .atleta .rodape {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+  background: #420494;
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.08);
   border-radius: 0px 0px 10px 10px;
-  padding: 90px 0 40px;
-}
-
-.atleta .rodape h4,
-.atleta .rodape h5 {
-  margin: 0;
+  padding-top: 90px;
+  padding-bottom: 40px;
 }
 
 .atleta .rodape h4 {
-  color: #ffd700;
+  color: gold;
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
-  margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 .atleta .rodape h5 {
   font-size: 18px;
   line-height: 22px;
-  color: #f0e68c;
+  color: #ffffff;
+  padding: 0 16px;
+}
+.atleta .rodape p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  padding: 0 16px;
 }
