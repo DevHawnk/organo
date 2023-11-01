@@ -56,12 +56,6 @@ const Formulario = ({ aoCadastrar, times, aoCriarTime }) => {
         />
         <Botao texto="Criar card" />
       </form>
-      <form
-        className="formulario"
-        onSubmit={(evento) => {
-          evento.preventDefault();
-        }}
-      ></form>
     </section>
   );
 };

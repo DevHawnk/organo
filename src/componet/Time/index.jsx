@@ -7,19 +7,8 @@ const Time = ({ time, atletas, aoDeletar, mudarCor }) => {
     atletas.length > 0 && (
       <section
         className="time"
-        style={{
-          backgroundImage: "url(/imagens/fundo.png)",
-          backgroundColor: hexToRgba(time.cor, "0.6"),
-        }}
+        style={{ backgroundColor: hexToRgba(time.cor, "0.6") }}
       >
-        <input
-          type="color"
-          className="input-cor"
-          value={time.cor}
-          onChange={(evento) => {
-            mudarCor(evento.target.value, time.nome);
-          }}
-        />
         <h3 style={{ borderColor: time.cor }}>{time.nome}</h3>
         <div className="atletas">
           {atletas.map((atleta, indice) => {
