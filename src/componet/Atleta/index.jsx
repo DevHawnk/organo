@@ -3,7 +3,7 @@ import { AiFillCloseCircle } from "react-icons/ai";
 
 const Atleta = ({ atleta, corDeFundo, aoDeletar, aoFavoritar }) => {
   return (
-    <div className="colaborador">
+    <div className="atleta">
       <AiFillCloseCircle
         size={25}
         className="deletar"
